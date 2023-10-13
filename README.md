@@ -32,7 +32,7 @@ clean_dataset = dataset.testset #clean test set
 poisoned_dataset = dataset.only_trigger_test_set #poisoned test set(without target label)
 ```
 
-Compute confusion metrics and identify poisoned indices
+Compute outlier score and identify poisoned indices
 ```
 python confusion_experiments_bd.py
 ```
@@ -42,3 +42,5 @@ Clean label recovery experiment
 python clean_recovery.py
 ```
 
+## Reference
+The attacks are mainly implemented according to [BackdoorBox](https://github.com/THUYimingLi/BackdoorBox).
